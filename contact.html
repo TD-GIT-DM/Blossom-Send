@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Blossom and Root Kitchen</title>
+<meta name="description" content="Get in touch with Blossom and Root Kitchen — address, hours, phone, private events, and catering inquiries." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">❦</span> Blossom &amp; Root</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="reservations.html" class="nav-cta">Reserve</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-banner banner-contact">
+  <div class="page-banner-inner">
+    <div class="hero-eyebrow">— Say Hello —</div>
+    <h1>Contact</h1>
+    <p>We'd love to hear from you.</p>
+  </div>
+</header>
+
+<section class="menu-section">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Find Us</div>
+      <h2>Visit the Restaurant</h2>
+      <div class="divider"></div>
+      <p>Right in the heart of downtown Danville — one block from the Iron Horse Trail. Free parking in the surrounding lots.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <svg style="width:42px;height:42px;color:var(--terracotta);margin:0 auto 1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <h3>Address</h3>
+        <p>411 Hartz Ave</p>
+        <p>Danville, CA 94526</p>
+        <a href="https://maps.google.com/?q=411+Hartz+Ave+Danville+CA" target="_blank" rel="noopener" style="color:var(--terracotta); margin-top:0.8rem; display:inline-block;">Get Directions →</a>
+      </div>
+
+      <div class="contact-card">
+        <svg style="width:42px;height:42px;color:var(--terracotta);margin:0 auto 1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        <h3>Phone &amp; Email</h3>
+        <a href="tel:+19258542059">(925) 854-2059</a>
+        <a href="mailto:hello@blossomandrootkitchen.com">hello@blossomandrootkitchen.com</a>
+        <p style="margin-top:0.8rem; font-size:0.88rem;">Private events: <a href="mailto:events@blossomandrootkitchen.com" style="color:var(--terracotta);">events@blossomandrootkitchen.com</a></p>
+      </div>
+
+      <div class="contact-card">
+        <svg style="width:42px;height:42px;color:var(--terracotta);margin:0 auto 1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <h3>Hours</h3>
+        <p>Wed–Thu · 9am – 7:30pm</p>
+        <p>Fri–Sat · 9am – 8pm</p>
+        <p>Sun · 9am – 6:30pm</p>
+        <p style="color:var(--muted);">Mon–Tue · Closed</p>
+      </div>
+    </div>
+
+    <div class="map-wrap">
+      <iframe
+        src="https://www.google.com/maps?q=411+Hartz+Ave+Danville+CA+94526&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map to Blossom and Root Kitchen"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Get in Touch</div>
+      <h2>Send Us a Note</h2>
+      <div class="divider"></div>
+      <p>Private events, press, catering, or just a kind word — we read every message.</p>
+    </div>
+
+    <form class="res-form" style="max-width:720px; margin:0 auto;" onsubmit="event.preventDefault(); document.getElementById('contact-success').style.display='block'; this.reset();">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cname">Your Name</label>
+          <input type="text" id="cname" name="cname" required />
+        </div>
+        <div class="form-group">
+          <label for="cemail">Email</label>
+          <input type="email" id="cemail" name="cemail" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="csubject">What's This About?</label>
+        <select id="csubject" name="csubject" required>
+          <option value="">Select</option>
+          <option>General Inquiry</option>
+          <option>Private Event / Buyout</option>
+          <option>Catering</option>
+          <option>Press / Media</option>
+          <option>Careers</option>
+          <option>Feedback</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="cmessage">Your Message</label>
+        <textarea id="cmessage" name="cmessage" required placeholder="Tell us a bit about what you're thinking."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+      <div id="contact-success" style="display:none; margin-top:1.5rem; padding:1rem; background:var(--sage); color:var(--cream); border-radius:2px; text-align:center;">
+        <strong>Thank you!</strong> We'll get back to you shortly.
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Blossom &amp; Root Kitchen</div>
+      <p style="color:var(--cream-dark); font-size:0.95rem;">A seasonal, plant-based table in downtown Danville. Elevated California cuisine, rooted in the garden.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <ul>
+        <li>411 Hartz Ave</li>
+        <li>Danville, CA 94526</li>
+        <li><a href="tel:+19258542059">(925) 854-2059</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Hours</h4>
+      <ul>
+        <li>Wed–Thu · 9a – 7:30p</li>
+        <li>Fri–Sat · 9a – 8p</li>
+        <li>Sun · 9a – 6:30p</li>
+        <li>Mon–Tue · Closed</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Blossom and Root Kitchen · All rights reserved.</div>
+    <div class="socials">
+      <a href="#" aria-label="Instagram">◎</a>
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="Yelp">✱</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

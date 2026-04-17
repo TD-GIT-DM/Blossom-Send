@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gallery — Blossom and Root Kitchen</title>
+<meta name="description" content="A look inside Blossom and Root Kitchen — our dishes, our patio, and our moments." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  /* Page-specific: lightbox modal */
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 20, 15, 0.92);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    cursor: zoom-out;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90vh;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+  }
+  .lightbox-close {
+    position: absolute;
+    top: 1.5rem; right: 2rem;
+    color: var(--cream);
+    background: none; border: none;
+    font-size: 2rem; cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">❦</span> Blossom &amp; Root</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="reservations.html" class="nav-cta">Reserve</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-banner banner-gallery">
+  <div class="page-banner-inner">
+    <div class="hero-eyebrow">— A Look Inside —</div>
+    <h1>Gallery</h1>
+    <p>The plates, the patio, the people.</p>
+  </div>
+</header>
+
+<section class="gallery-section">
+  <div class="container">
+    <div class="gallery-grid">
+      <div class="gallery-item tall" style="background-image:url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=900&q=80');" data-full="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1800&q=80"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80');" data-full="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1800&q=80"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=80');" data-full="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1800&q=80"></div>
+      <div class="gallery-item wide" style="background-image:url('https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=1400&q=80');" data-full="https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=2200&q=80"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=900&q=80');" data-full="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=1800&q=80"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80');" data-full="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1800&q=80"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=80');" data-full="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1800&q=80"></div>
+      <div class="gallery-item tall" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80');" data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=80"></div>
+      <div class="gallery-item wide" style="background-image:url('https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1400&q=80');" data-full="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=2200&q=80"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=80');" data-full="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1800&q=80"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=900&q=80');" data-full="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=1800&q=80"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1481931098730-318b6f776db0?auto=format&fit=crop&w=900&q=80');" data-full="https://images.unsplash.com/photo-1481931098730-318b6f776db0?auto=format&fit=crop&w=1800&q=80"></div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" onclick="this.classList.remove('open')">
+  <button class="lightbox-close" aria-label="Close">×</button>
+  <img id="lightbox-img" src="" alt="" />
+</div>
+
+<section class="cta-band">
+  <div class="container">
+    <div class="section-eyebrow" style="color:var(--gold);">Tag Us</div>
+    <h2>@BlossomandRootKitchen</h2>
+    <p>We love seeing your photos. Share yours on Instagram and tag us.</p>
+    <a href="reservations.html" class="btn btn-primary">Book Your Visit</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Blossom &amp; Root Kitchen</div>
+      <p style="color:var(--cream-dark); font-size:0.95rem;">A seasonal, plant-based table in downtown Danville. Elevated California cuisine, rooted in the garden.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <ul>
+        <li>411 Hartz Ave</li>
+        <li>Danville, CA 94526</li>
+        <li><a href="tel:+19258542059">(925) 854-2059</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Hours</h4>
+      <ul>
+        <li>Wed–Thu · 9a – 7:30p</li>
+        <li>Fri–Sat · 9a – 8p</li>
+        <li>Sun · 9a – 6:30p</li>
+        <li>Mon–Tue · Closed</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Blossom and Root Kitchen · All rights reserved.</div>
+    <div class="socials">
+      <a href="#" aria-label="Instagram">◎</a>
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="Yelp">✱</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.gallery-item').forEach(el => {
+    el.addEventListener('click', () => {
+      const full = el.getAttribute('data-full');
+      document.getElementById('lightbox-img').src = full;
+      document.querySelector('.lightbox').classList.add('open');
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Menu — Blossom and Root Kitchen</title>
+<meta name="description" content="Our seasonal, 100% plant-based menu — small plates, large plates, bowls, salads, brunch, kids, and handcrafted drinks." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">❦</span> Blossom &amp; Root</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="reservations.html" class="nav-cta">Reserve</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-banner banner-menu">
+  <div class="page-banner-inner">
+    <div class="hero-eyebrow">— The Kitchen —</div>
+    <h1>Our Menu</h1>
+    <p>Seasonal, plant-based, and quietly ambitious.</p>
+  </div>
+</header>
+
+<section class="menu-section">
+  <div class="container">
+
+    <p style="text-align:center; max-width:620px; margin:0 auto 3rem; color:var(--muted);">
+      Our menu changes with the seasons. Below is a sampling of what's on the table this month. Items marked <span class="menu-tag">GF</span> are gluten-free. Most dishes can be adapted — please tell your server about allergies or preferences.
+    </p>
+
+    <!-- SMALL PLATES -->
+    <div class="menu-category">
+      <h2>Small Plates &amp; Starters</h2>
+      <div class="menu-category-sub">To Begin</div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Heirloom Tomato Gazpacho</h4><span class="price">$10</span></div>
+          <p><span class="menu-tag">GF</span>Chilled, creamy, sun-ripened tomatoes, cucumber, stone fruit, good olive oil.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Wood-Fired Focaccia</h4><span class="price">$9</span></div>
+          <p>Rosemary sea salt, roasted garlic confit, herb oil for dipping.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Charred Shishitos</h4><span class="price">$12</span></div>
+          <p><span class="menu-tag">GF</span>Blistered in olive oil, smoked salt, preserved lemon aioli.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Market Crudité Board</h4><span class="price">$16</span></div>
+          <p><span class="menu-tag">GF</span>Whatever's best today — raw, pickled, and charred — with cashew-herb dip.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Crispy Artichoke Hearts</h4><span class="price">$14</span></div>
+          <p>Hand-breaded, flash-fried, caper-remoulade, meyer lemon.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Roasted Beet Carpaccio</h4><span class="price">$13</span></div>
+          <p><span class="menu-tag">GF</span>Shaved gold &amp; ruby beets, whipped cashew, toasted pistachio, mint.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOUPS & SALADS -->
+    <div class="menu-category">
+      <h2>Soups &amp; Salads</h2>
+      <div class="menu-category-sub">Fresh from the Garden</div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Seasonal Green Salad</h4><span class="price">$13</span></div>
+          <p><span class="menu-tag">GF</span>Little gem, herbs, shaved radish, champagne vinaigrette, toasted seeds.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Kale Caesar</h4><span class="price">$15</span></div>
+          <p>Tuscan kale, cashew-caper caesar, sourdough croutons, cracked pepper.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Farmhouse Tomato &amp; Stone Fruit</h4><span class="price">$16</span></div>
+          <p><span class="menu-tag">GF</span>Heirloom tomato, peach, basil, almond ricotta, balsamic reduction.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Cauliflower &amp; White Bean Soup</h4><span class="price">$11</span></div>
+          <p><span class="menu-tag">GF</span>Silky, roasted, finished with truffle oil and chive.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- LARGE PLATES -->
+    <div class="menu-category">
+      <h2>Large Plates</h2>
+      <div class="menu-category-sub">From the Kitchen</div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Crispy Maitake Sandwich</h4><span class="price">$18</span></div>
+          <p>Golden-fried maitake, smoked aioli, pickled onion, butter lettuce, milk bun, crinkle fries.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Blossom Smashburger</h4><span class="price">$19</span></div>
+          <p>House-ground plant patty smashed to order, aged "cheddar," secret sauce, pickles, crinkle fries.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Bucatini Bolognese</h4><span class="price">$22</span></div>
+          <p>Slow-simmered lentil &amp; mushroom ragù, bucatini, cashew parm, torn basil.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Garden Poké Bowl</h4><span class="price">$24</span></div>
+          <p><span class="menu-tag">GF</span>Marinated watermelon "tuna," sushi rice, avocado, edamame, pickled radish, sesame-ginger.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Cauliflower "Steak" au Poivre</h4><span class="price">$26</span></div>
+          <p><span class="menu-tag">GF</span>Thick-cut roasted cauliflower, peppercorn cream, fingerlings, grilled broccolini.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Wild Mushroom Risotto</h4><span class="price">$23</span></div>
+          <p><span class="menu-tag">GF</span>Carnaroli rice, maitake, shiitake, truffle, crispy sage, fresh thyme.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Seasonal Grain Bowl</h4><span class="price">$17</span></div>
+          <p><span class="menu-tag">GF</span>Farro or quinoa, roasted market vegetables, tahini-lemon, crispy chickpeas, herbs.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Tacos de Árbol</h4><span class="price">$20</span></div>
+          <p><span class="menu-tag">GF</span>Three chile-braised jackfruit tacos, charred salsa, pickled red onion, lime, cilantro rice.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BRUNCH -->
+    <div class="menu-category">
+      <h2>Brunch &amp; All-Day</h2>
+      <div class="menu-category-sub">Served Daily 9am – 2pm</div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Heirloom Avocado Toast</h4><span class="price">$15</span></div>
+          <p>Smashed avocado, heirloom tomato, chili crunch, hemp, lemon, country sourdough.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Chickpea Scramble</h4><span class="price">$16</span></div>
+          <p><span class="menu-tag">GF</span>Fluffy chickpea flour scramble, mushrooms, spinach, roasted potatoes, toast.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Blueberry Lemon Pancakes</h4><span class="price">$15</span></div>
+          <p>Fluffy stack, fresh blueberry compote, lemon zest, maple, whipped cashew cream.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Açaí &amp; Granola Bowl</h4><span class="price">$14</span></div>
+          <p><span class="menu-tag">GF</span>Frozen açaí, banana, seasonal berries, house granola, coconut, cacao nibs.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SWEETS -->
+    <div class="menu-category">
+      <h2>Sweets</h2>
+      <div class="menu-category-sub">To End</div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Olive Oil Chocolate Torte</h4><span class="price">$11</span></div>
+          <p><span class="menu-tag">GF</span>Dark chocolate, Spanish olive oil, flaky sea salt, raspberry coulis.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Seasonal Fruit Crumble</h4><span class="price">$10</span></div>
+          <p>Baked market fruit, oat-almond streusel, coconut vanilla "cream."</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Saffron Rice Pudding</h4><span class="price">$9</span></div>
+          <p><span class="menu-tag">GF</span>Coconut &amp; cashew milk, saffron, cardamom, pistachio, rose petals.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Affogato</h4><span class="price">$8</span></div>
+          <p><span class="menu-tag">GF</span>Espresso poured over vanilla coconut gelato.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DRINKS -->
+    <div class="menu-category">
+      <h2>The Bar</h2>
+      <div class="menu-category-sub">Wine · Beer · Mocktails · Coffee</div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Garden Spritz</h4><span class="price">$12</span></div>
+          <p>Non-alcoholic aperitivo, cucumber, basil, elderflower, sparkling. A house favorite.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Smoked Maple Old Fashioned (NA)</h4><span class="price">$13</span></div>
+          <p>Non-alcoholic whiskey, smoked maple, aromatic bitters, orange.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Rotating Natural Wines</h4><span class="price">$14 / $56</span></div>
+          <p>Glass / bottle. Small-production, low-intervention, sustainably farmed. Ask your server.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Local Draft Beer</h4><span class="price">$8</span></div>
+          <p>Rotating taps from Bay Area breweries committed to sustainable practices.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Espresso Menu</h4><span class="price">$4 – $7</span></div>
+          <p>Single origin beans, oat or house almond milk. Cortado, flat white, macchiato.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Matcha &amp; Hot Teas</h4><span class="price">$5 – $6</span></div>
+          <p>Ceremonial matcha, rotating looseleaf — jasmine, hojicha, genmaicha, rooibos.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- KIDS -->
+    <div class="menu-category">
+      <h2>Little Roots</h2>
+      <div class="menu-category-sub">For Kids 10 &amp; Under</div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Mini Smashburger &amp; Fries</h4><span class="price">$12</span></div>
+          <p>Same smashburger, smaller bun, crinkle fries.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Buttered Bucatini</h4><span class="price">$10</span></div>
+          <p>Plain or with tomato sauce, cashew parm on the side.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Pancake &amp; Berries</h4><span class="price">$9</span></div>
+          <p>One fluffy pancake, fresh berries, maple.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-top"><h4>Veggies &amp; Hummus</h4><span class="price">$8</span></div>
+          <p><span class="menu-tag">GF</span>Carrot sticks, cucumber, cherry tomato, whipped hummus, pita.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <div class="section-eyebrow" style="color:var(--gold);">Ready to Dine?</div>
+    <h2>Let Us Save You a Table</h2>
+    <p>Tables book quickly on weekend evenings — we recommend reserving a few days ahead.</p>
+    <a href="reservations.html" class="btn btn-primary">Reserve Now</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Blossom &amp; Root Kitchen</div>
+      <p style="color:var(--cream-dark); font-size:0.95rem;">A seasonal, plant-based table in downtown Danville. Elevated California cuisine, rooted in the garden.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <ul>
+        <li>411 Hartz Ave</li>
+        <li>Danville, CA 94526</li>
+        <li><a href="tel:+19258542059">(925) 854-2059</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Hours</h4>
+      <ul>
+        <li>Wed–Thu · 9a – 7:30p</li>
+        <li>Fri–Sat · 9a – 8p</li>
+        <li>Sun · 9a – 6:30p</li>
+        <li>Mon–Tue · Closed</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Blossom and Root Kitchen · All rights reserved.</div>
+    <div class="socials">
+      <a href="#" aria-label="Instagram">◎</a>
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="Yelp">✱</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
